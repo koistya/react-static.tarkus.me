@@ -129,7 +129,10 @@ module.exports =
           return regeneratorRuntime.async(function callee$2$0$(context$3$0) {
             while (1) switch (context$3$0.prev = context$3$0.next) {
               case 0:
-                return context$3$0.abrupt('return', _reactDom2['default'].render(component, container));
+                return context$3$0.abrupt('return', _reactDom2['default'].render(component, container, function () {
+                  // Track the page view event via Google Analytics
+                  window.ga('send', 'pageview');
+                }));
 
               case 1:
               case 'end':
