@@ -9,7 +9,7 @@ import GitRepo from 'git-repository';
 // TODO: Update deployment URL
 const remote = {
   name: 'github',
-  url: 'https://github.com/{user}/{repo}.git',
+  url: 'https://github.com/koistya/react-static.tarkus.me.git',
   branch: 'gh-pages',
 };
 
