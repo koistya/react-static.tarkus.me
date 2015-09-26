@@ -121,27 +121,37 @@ module.exports =
     }, null, _this);
   };
 
-  if (_fbjsLibExecutionEnvironment.canUseDOM) {
-    (function () {
-      var container = document.getElementById('app');
-      _libLocation2['default'].listen(function (location) {
-        route(location.pathname, function callee$2$0(component) {
-          return regeneratorRuntime.async(function callee$2$0$(context$3$0) {
-            while (1) switch (context$3$0.prev = context$3$0.next) {
-              case 0:
-                return context$3$0.abrupt('return', _reactDom2['default'].render(component, container, function () {
-                  // Track the page view event via Google Analytics
-                  window.ga('send', 'pageview');
-                }));
+  function run() {
+    var _this2 = this;
 
-              case 1:
-              case 'end':
-                return context$3$0.stop();
-            }
-          }, null, _this);
-        });
+    var container = document.getElementById('app');
+    _libLocation2['default'].listen(function (location) {
+      route(location.pathname, function callee$2$0(component) {
+        return regeneratorRuntime.async(function callee$2$0$(context$3$0) {
+          while (1) switch (context$3$0.prev = context$3$0.next) {
+            case 0:
+              return context$3$0.abrupt('return', _reactDom2['default'].render(component, container, function () {
+                // Track the page view event via Google Analytics
+                window.ga('send', 'pageview');
+              }));
+
+            case 1:
+            case 'end':
+              return context$3$0.stop();
+          }
+        }, null, _this2);
       });
-    })();
+    });
+  }
+
+  if (_fbjsLibExecutionEnvironment.canUseDOM) {
+    // Run the application when both DOM is ready
+    // and page content is loaded
+    if (window.addEventListener) {
+      window.addEventListener('DOMContentLoaded', run);
+    } else {
+      window.attachEvent('onload', run);
+    }
   }
 
   exports['default'] = { route: route, routes: routes };
