@@ -2,8 +2,11 @@
 
 > This is a demo site of the [React Static Boilerplate](https://github.com/koistya/react-static-boilerplate) project
 
-[Demo site](http://react-static.tarkus.me) &nbsp;|&nbsp; Join [#react-static-boilerplate](https://gitter.im/koistya/react-static-boilerplate) chatroom on Gitter to stay up to date.
+Visit [demo site](http://react-static.tarkus.me) &nbsp;|&nbsp;
+See [roadmap](https://waffle.io/koistya/react-static-boilerplate) &nbsp;|&nbsp;
+Join [#react-static-boilerplate](https://gitter.im/koistya/react-static-boilerplate) chatroom on Gitter to stay up to date.
 
+&nbsp; &nbsp; ✓ Easy deployment to [GitHub Pages](https://pages.github.com/) or [Amazon S3](http://davidwalsh.name/hosting-website-amazon-s3)<br>
 ### Related Projects
 
   * [React Static Boilerplate](https://github.com/koistya/react-static-boilerplate)
